@@ -1,4 +1,12 @@
 ## katamari_selectcc_base.gd ##
+
+# Node Structure:
+#	- root
+#	     - Pivot (Node3D or CSGSphere3D Scaled to 0.1 on XYZ, Rotated -90 degrees on Z)
+#		     - CSGSphere3D (Position set to -10m on X)
+#	     	     - Label3D (Text set to "^", font size 100 and Position set to -1 on X, Rotated 90 degrees on Y and -180 degrees on Z)
+#	     - Camera3D (Set to Current)
+
 extends Node3D
 
 # Variables
